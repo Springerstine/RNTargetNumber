@@ -1,14 +1,16 @@
 import { useState } from 'react';
 import { StyleSheet, ImageBackground, SafeAreaView } from 'react-native';
+
 import { LinearGradient } from 'expo-linear-gradient';
 import { useFonts } from 'expo-font';
 import AppLoading from 'expo-app-loading';
+import { StatusBar } from 'expo-status-bar';
+
 
 import StartGameScreen from './Screens/StartGameScreen';
 import GameScreen from './Screens/GameScreen';
 import GameOverScreen from './Screens/GameOverScreen';
 import Colors from './constants/colors';
-import { StatusBar } from 'expo-status-bar'
 
 export default function App() {
 
@@ -36,7 +38,7 @@ export default function App() {
   }
 
   function startNewGameHandler() {
-    //Set to 'null' to not proct gameIsOver
+    //Set to 'null' to not proct gameIsOver()
     setUserNumber(null);
     setGuessRounds(0);
   }
@@ -62,7 +64,6 @@ export default function App() {
     );
   }
 
-
   return (
     <>
       <StatusBar style="light" />
@@ -85,8 +86,8 @@ export default function App() {
 const styles = StyleSheet.create({
   rootScreen: {
     flex: 1,
-    // padding: 24,
   },
+
   backgroundImage: {
     opacity: 0.15,
   }
