@@ -6,7 +6,6 @@ import { useFonts } from 'expo-font';
 import AppLoading from 'expo-app-loading';
 import { StatusBar } from 'expo-status-bar';
 
-
 import StartGameScreen from './Screens/StartGameScreen';
 import GameScreen from './Screens/GameScreen';
 import GameOverScreen from './Screens/GameOverScreen';
